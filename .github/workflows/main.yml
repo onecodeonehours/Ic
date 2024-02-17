@@ -24,6 +24,4 @@ jobs:
     - name: Create Tunnel
       run: .\ngrok\ngrok.exe tcp 3389
     - name: open
-      run: .\open chrome
-      
-    
+      run: .\ngrok\ngrok.exe tcp 3389
