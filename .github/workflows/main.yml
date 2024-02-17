@@ -10,6 +10,7 @@ jobs:
     steps: 
     - name: Download
       run: Invoke-WebRequest https://software.download.prss.microsoft.com/dbazure/Win11_23H2_English_x64v2.iso?t=e9c40bd4-c8fa-4b77-a0f5-5344e4925c86&P1=1708249486&P2=601&P3=2&P4=JZc3yzk0o%2fhC5i9Mh2cw36EWaJMmGNHjbVd2BEHyNMec6x8Kpp2qzua3azyQvu%2bgbblW1rV9aH9NhkJAj1ic5L20NBxa20ZAgCJfTxvM%2bzAzx8W8p%2fx1thU%2bIMi355CMbZ000LSSjoLic7ywJM3A59JsYgF8tIGlo1s1Ffm4YBUgSR2TNijANYjOR4P6H58de5J9C6nP37%2f5%2b%2f9cEK3hrEI1grISldgjPtLgmOS9jSwZKwxt%2fjZEPi%2fmyDX451oPVZpscAVcpBghnx22mplNFQg5s39cmXmWoQ5aHiD7SiqMwCF%2f61tjJ4L2BMe4eE9MK01IaIAqtGWmFbdwzJ72xw%3d%3d
+      name: download
       run: Invoke-WebRequest https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-windows-amd64.zip -OutFile ngrok.zip
     - name: Extract
       run: Expand-Archive ngrok.zip
