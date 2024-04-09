@@ -1,4 +1,4 @@
-wget -O win.iso "https://go.microsoft.com/fwlink/p/?LinkID=2195404&clcid=0x409&culture=en-us&country=US"
+wget -O win.iso "https://computernewb.com/isos/windows/10%2022H2%20Enterprise%20x64%20en-US.iso"
 
 sudo qemu-system-x86_64 -m 8G -cpu host -smp 4 -hda win.img -cdrom win.iso -device usb-ehci,id=usb,bus=pci.0,addr=0x4 -device usb-tablet -smp cores=4 -device e1000,netdev=n0 -netdev user,id=n0 -accel kvm -display vnc=:1 -vga vmware &
 
